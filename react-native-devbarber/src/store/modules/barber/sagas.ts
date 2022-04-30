@@ -38,7 +38,7 @@ function* searchBarbers() {
       longitude:''
     })
   );
-  console.log(result.data);
+
   yield put(loadBarbersSuccess(result.data));
   yield put(loadingEnd());
 }
