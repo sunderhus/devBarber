@@ -19,7 +19,7 @@ const loadFavoriteBarbers = async (): Promise<LoadFavoriteBarbersResponse> => {
 
   const response = await fetch(url);
   const parsedResponse = await response.json();
-  console.log(parsedResponse)
+
   return parsedResponse as LoadFavoriteBarbersResponse;
 };
 
